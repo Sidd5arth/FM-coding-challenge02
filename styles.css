@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+}  
+@font-face {
+    font-family: "Roboto-rg";
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+  }
+:root{
+    --dark-gray: hsl(234, 29%, 20%);
+    --whitee: hsl(0, 0%, 100%);
+    --charcoal: hsl(235, 18%, 26%);
+    --tomato: hsl(4, 100%, 67%);
+}  
+#main{
+    position: relative;
+    height: 100vh;
+    background-color: var(--dark-gray);
+}
+.content{
+    border-radius:2em;
+    position: absolute;
+    display: flex;
+    gap: 3em;
+    padding: 2rem;
+    background-color: var(--whitee);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sign-form{
+    padding: 1.4em;
+    width: 26em;
+}
+.title>h1{
+    color: var(--dark-gray);
+    padding-top: 1em;
+    font-size: 3.4em;
+    width: 100%;
+}
+.title>p{
+    color: var(--dark-gray);
+    padding-top: 1em;
+    font-size: 1em;
+    width: 100%;
+}
+.email-input{
+    display: flex;
+    flex-direction: column;
+}
+.email-input>label{
+    padding: 0.5em 0;
+}
+.points{
+    display: flex;
+    padding-top: 1em;
+}
+.points>p{
+   padding: 0em 0.8em;
+}
+.points-collection{
+    margin: 1.2em 0;
+}
+.email-input>input{
+    border-radius: 0.6em;
+    border: 1px solid rgba(0, 0, 0, 0.286);
+    padding: 1.4em;
+    margin-bottom: 1em;
+}
+.input-error{
+    outline: 1px solid rgb(255, 107, 107);
+    background-color: rgb(255, 211, 211);
+}
+.input-error-text{
+    color: rgba(255, 35, 35, 0.922);
+    opacity: 0;
+}
+.label-style{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    margin-top: 1.2em;
+}
+.label-style>p{
+    font-size: small;
+}
+.email-input>input:focus{
+    border-color: var(--dark-gray);
+    outline: none;
+    border-width: 0.125em;
+}
+.email-input{
+    margin-top: 2em;
+    margin-bottom: 0.4em;
+}
+.btn{
+    width: 100%;
+    padding: 1.4em;
+    border-radius: 0.6em;
+    border: none;
+    background-color: var(--dark-gray);
+    color: var(--whitee);
+    transition: 0.3s ease;
+}
+.btn:active{
+    background-color: var(--dark-gray);
+}
+        
+.btn:hover{
+    background: linear-gradient(90deg, rgba(243,66,164,1) 0%, rgba(255,98,87,1) 100%);
+    box-shadow: 1px 25px 37px -13px rgba(255,79,79,1);
+    -webkit-box-shadow: 1px 25px 37px -13px rgba(255,79,79,1);
+    -moz-box-shadow: 1px 25px 37px -13px rgba(255,79,79,1);
+    transform: translateY(-5%);
+}
+.modal{
+    position: relative;
+    z-index: 100;
+    opacity: 0;
+    display: none;
+}
+.modal-backdrop{
+    position: fixed;
+    display: flex;
+    justify-content:center;
+    height: 100%;
+    width: 100%;
+    opacity: 98%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: var(--dark-gray);
+}
+.message{
+    margin: 2em 0;
+    font-weight: 100;
+    font-family: Roboto-rg;
+}
+.modal-title{
+    width: 100%;
+    font-size: 2.8em;
+    line-height: 1em;
+    font-family: Roboto;
+}
+.modal-content{
+    position: absolute;
+    width: 28em;
+    height: 28em;
+    background-color: var(--whitee);
+    padding: 3.6em;
+    border-radius: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    transition: all 0.6s ease;
+}
+.modal.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .modal.visible .modal-content {
+    top: 25%;
+  }
+  
+.modal-header>img{
+    width: 2.8em;
+    margin-bottom: 1.4em;
+}
+@media only screen and (max-width: 870px) {
+    .content{
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    .sign-form{
+        padding: 1.4em;
+    }
+    .title>h1{
+        padding-top: 0;
+    }
+    .modal-content{
+        background-color: none;
+        padding: 3.6em;
+        border-radius: 1em;
+        transition: all 0.6s ease;
+    }
+    .modal-backdrop{
+        background-color: var(--whitee);
+        height: 100vh;
+    }
+    .close-modal{
+        margin-top: 18em;
+    }
+    .sign-image{
+        transform: translateY(-25%);
+    }
+    .sign-form{
+        transform: translateY(-30%);
+    }
+}
+
+
+

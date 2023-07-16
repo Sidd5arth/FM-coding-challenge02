@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>signup and validation</title>
+</head>
+<body>
+  <div id="main">
+    <div class="modal">
+      <span class="modal-backdrop"></span>
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="./assets/images/icon-list.svg"/>
+          <h2 class="modal-title">Thanks for </br> subscribing!</h2>
+        </div>
+        <div class="modal-body">
+          <p class="message"></p>
+        </div>
+        <div class="modal-footer">
+          <button class="close-modal btn">Dismiss message</button>
+        </div>
+      </div>
+    </div>
+    <div class="content">      
+      <div class="sign-form">
+        <div class="title">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers reciving monthly updates on</p>
+        </div>
+        <div class="points-collection">
+          <div class="points">
+            <img src="./assets/images/icon-list.svg"/>
+            <p>Product discovery and building what matters</p>
+          </div>
+          <div class="points">
+            <img src="./assets/images/icon-list.svg"/>
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+          <div class="points">
+            <img src="./assets/images/icon-list.svg"/>
+            <p>And mush more!</p>
+          </div>
+        </div>
+
+        <form action="/action_page.php">
+          <div class="email-input">
+            <div class="label-style">
+              <label for="fname">Email address</label>
+              <p class="input-error-text">Valid email require!</p>
+            </div>
+            <input type="text" id="fname" name="fname" placeholder="email@company.com"> 
+          </div>
+          <button type="submit" class="open-modal btn">Subscribe to monthly newsletter</button>
+        </form> 
+      </div>
+      <div class="sign-image">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration">
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
