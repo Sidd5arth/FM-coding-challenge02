@@ -156,7 +156,7 @@
     border-radius: 1em;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 30%);
     transition: all 0.6s ease;
 }
 .modal.visible {
