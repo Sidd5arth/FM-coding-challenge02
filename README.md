@@ -2,22 +2,6 @@
 
 This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-## Overview
-
 ### The challenge
 
 Users should be able to:
@@ -37,12 +21,7 @@ Users should be able to:
 
 ### What I learned
 
-Basically I refreshed my vanilla coding skills by tooking this and doing it without using any framework or libraries which I hadn't done in a while.
-
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Basically I refreshed my vanilla coding skills by taking this and doing it without using any framework or libraries which I hadn't done in a while.
 
 ### Continued development
 
